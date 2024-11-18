@@ -1,0 +1,42 @@
+
+/* .bg-fbt {
+	background-color:rgb(228 25 70);
+	background-color:#e41946;
+}
+
+.bg-fbt-100 {
+	background-color:rgb(228 14 115);
+	background-color:#e40e73;
+} */
+
+.bg-fbt { --tw-bg-opacity: 1; background-color:rgb(228 25 70/var(--tw-bg-opacity)); }
+.bg-fbt-100 { --tw-bg-opacity: 1; background-color:rgb(228 14 115/var(--tw-bg-opacity)); }
+.md\:text-fbt{ --tw-text-opacity:1; color:rgb(228 25 70/var(--tw-text-opacity)); }
+.md\:text-fbt-100{ --tw-text-opacity:1; color:rgb(228 14 115/var(--tw-text-opacity)); }
+:is(.dark .md\:dark\:text-fbt){ --tw-text-opacity:1; /* color:rgb(253 84 121/var(z--tw-text-opacity)); */ color:rgb(253, 84, 121); }
+:is(.dark .md\:dark\:text-fbt-100){ --tw-text-opacity:1; /* color:rgb(228 14 115/var(--tw-text-opacity)); */ color: #e41946; }
+:is(.dark .md\:dark\:hover\:text-fbt:hover){ --tw-text-opacity:1; color:rgb(253 84 121/var(--tw-text-opacity)) }
+:is(.dark .md\:dark\:hover\:text-fbt-100:hover){ --tw-text-opacity:1; color:rgb(253 84 121/var(--tw-text-opacity)) }
+:is(.dark .md\:dark\:active){ --tw-text-opacity:1; color:rgb(228 25 70/var(--tw-text-opacity)); }
+.from-fbt{ --tw-gradient-from:#e41946 var(--tw-gradient-from-position); --tw-gradient-to:rgba(228, 25, 70, 0) var(--tw-gradient-to-position); --tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to) }
+.to-fbt-100{ --tw-gradient-to: #e40e73 var(--tw-gradient-to-position) }
+.pattern-dots { background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px); background-size: 20px 20px; }
+.pattern-dots-dark { background-image: radial-gradient(circle, rgba(0, 0, 0, 0.15) 1px, transparent 1px); background-size: 10px 10px; }
+
+.pattern-diagonal{ background-image: repeating-linear-gradient( -45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 5px,  transparent 5px, transparent 25px ); }
+.pattern-wavy { background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f727 25px ), repeating-linear-gradient( transparent, transparent ); }
+.pettren-complex-circle { background-image: radial-gradient(circle at 29% 55%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 4%,transparent 4%, transparent 44%,transparent 44%, transparent 100%),radial-gradient(circle at 85% 89%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 52%,transparent 52%, transparent 100%),radial-gradient(circle at 6% 90%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 53%,transparent 53%, transparent 64%,transparent 64%, transparent 100%),radial-gradient(circle at 35% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 6%,transparent 6%, transparent 98%,transparent 98%, transparent 100%),radial-gradient(circle at 56% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 16%,transparent 16%, transparent 23%,transparent 23%, transparent 100%),radial-gradient(circle at 42% 0%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 3%,transparent 3%, transparent 26%,transparent 26%, transparent 100%),radial-gradient(circle at 29% 28%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 77% 21%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 35%,transparent 35%, transparent 55%,transparent 55%, transparent 100%),radial-gradient(circle at 65% 91%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 46%,transparent 46%, transparent 76%,transparent 76%, transparent 100%),linear-gradient(45deg, rgb(228, 25, 70),rgb(228, 14, 115)); }
+a.active { color:rgb(228 25 70/var(--tw-text-opacity)); }
+.md\:justify-space-around { justify-content: space-around; }
+
+.slider { height: 100px; margin: auto; overflow: hidden; position: relative; }
+.slider::before,
+.slider::after { content: ""; height: 100px; position: absolute; width: 200px; z-index: 2; }
+.slider::after { right: 0; top: 0; transform: rotateZ(180deg); }
+.slider::before { left: 0; top: 0; }
+.slider .slide-track { display: flex; width: calc(250px * 14 * 2); /* Menggandakan lebar track untuk loop mulus */ animation: scroll 40s linear infinite; }
+.slider .slide { padding: 0px 10px 10px 0; }
+
+@media (min-width: 600px) { .pattern-dots-dark { background-size: 15px 15px; } }
+@media (min-width: 1024px) { .pattern-dots-dark { background-size: 20px 20px; } }
+@keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-250px * 7)); } }
